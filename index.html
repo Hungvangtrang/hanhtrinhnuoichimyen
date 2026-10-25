@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Duy Hùng | Từ Người Lính Hải Quân Cam Ranh Đến Sứ Mệnh Vàng Trắng HUVATRA</title>
+    <meta name="description" content="Hành trình 35 năm từ người chiến sĩ Hải quân nhập ngũ tháng 02/1990 tại Bán đảo Cam Ranh trưởng thành lên Sĩ quan QĐND Việt Nam, đến nhà sáng lập thương hiệu Yến sào HUVATRA Khánh Hòa.">
+    <meta property="og:title" content="Nguyễn Duy Hùng — Kỷ Luật Người Lính & Sứ Mệnh Vàng Trắng HUVATRA">
+    <meta property="og:description" content="35 năm canh giữ biển đảo tiền tiêu Cam Ranh và hành trình đưa Vàng Trắng Khánh Hòa vươn ra thế giới với triết lý Sống Kỷ Luật - Sống Trách Nhiệm.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#050D1A',
+                            900: '#0A192F',
+                            800: '#112240',
+                            700: '#1D3557'
+                        },
+                        gold: {
+                            300: '#F3E5AB',
+                            400: '#E5C158',
+                            500: '#D4AF37',
+                            600: '#AA820A'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050D1A;
+            color: #E2E8F0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF6D6 0%, #D4AF37 50%, #AA820A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.28);
+        }
+        .glass-card {
+            background: rgba(17, 34, 64, 0.65);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.22);
+        }
+        .dropcap::first-letter {
+            font-family: 'Playfair Display', serif;
+            float: left;
+            font-size: 4.2rem;
+            line-height: 0.85;
+            padding-top: 4px;
+            padding-right: 14px;
+            padding-left: 2px;
+            color: #D4AF37;
+            font-weight: 700;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            70% { transform: scale(1.35); opacity: 0; }
+            100% { transform: scale(1.35); opacity: 0; }
+        }
+        .fab-pulse::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 9999px;
+            background: inherit;
+            z-index: -1;
+            animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @media print {
+            .no-export { display: none !important; }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-navy-950">
+
+    <!-- THANH NAVIGATION & CÔNG CỤ QUẢN TRỊ -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-navy-950/90 backdrop-blur-md border-b border-gold-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3">
+                <span class="w-9 h-9 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-navy-950 font-serif font-bold text-lg shadow-md">H</span>
+                <div>
+                    <p class="font-serif font-bold text-gold-400 tracking-wider text-sm sm:text-base leading-none">HUVATRA HERITAGE</p>
+                    <p class="text-[11px] text-slate-400 tracking-widest uppercase mt-0.5">Hùng Vàng Trắng • Khánh Hòa</p>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm text-slate-300">
+                <a href="#hanh-trinh" class="hover:text-gold-400 transition">Hành Trình 35 Năm</a>
+                <a href="#san-pham" class="hover:text-gold-400 transition">Tinh Hoa HUVATRA</a>
+                <a href="#cot-moc" class="hover:text-gold-400 transition">Dấu Ấn Cuộc Đời</a>
+                <a href="#su-menh" class="hover:text-gold-400 transition">Sứ Mệnh Quốc Tế</a>
+            </div>
+
+            <!-- Cụm nút Quản trị (Tự động gỡ bỏ khi xuất file sạch cho GitHub) -->
+            <div class="flex flex-wrap items-center gap-2 no-export">
+                <label for="upload-avatar" class="cursor-pointer px-3 py-1.5 rounded-full text-xs font-semibold bg-navy-800 hover:bg-navy-700 text-gold-300 border border-gold-500/40 transition flex items-center gap-1.5">
+                    <span>📷 Đổi Ảnh Chân Dung</span>
+                    <input type="file" id="upload-avatar" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'hero-portrait')">
+                </label>
+                <button onclick="toggleConfigModal()" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-navy-800 hover:bg-navy-700 text-gold-300 border border-gold-500/40 transition">
+                    🔗 Gắn Link Zalo/FB
+                </button>
+                <button onclick="exportCleanHTML()" class="px-4 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-gold-400 to-gold-600 text-navy-950 hover:brightness-110 transition shadow-lg">
+                    ⬇ Lưu index.html (Bản GitHub)
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODAL CẤU HÌNH NHANH LINK ZALO & FANPAGE (Ẩn khi xuất file) -->
+    <div id="config-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy-950/80 backdrop-blur-sm p-4 no-export">
+        <div class="glass-card rounded-2xl max-w-md w-full p-6 space-y-4 border border-gold-500/40 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-gold-500/20 pb-3">
+                <h3 class="font-serif text-lg font-bold text-gold-400">Cấu Hình Kết Nối HUVATRA</h3>
+                <button onclick="toggleConfigModal()" class="text-slate-400 hover:text-white text-xl leading-none">&times;</button>
+            </div>
+            <div class="space-y-3 text-sm">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Số Điện Thoại Zalo (Hoặc Link Zalo.me)</label>
+                    <input type="text" id="input-zalo" placeholder="VD: 0912345678 hoặc https://zalo.me/..." class="w-full px-3.5 py-2 rounded-lg bg-navy-900 border border-gold-500/30 text-white focus:outline-none focus:border-gold-400">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-gold-300 mb-1">Đường Dẫn Facebook Fanpage HUVATRA</label>
+                    <input type="text" id="input-fb" placeholder="VD: https://facebook.com/yensaohuvatra" class="w-full px-3.5 py-2 rounded-lg bg-navy-900 border border-gold-500/30 text-white focus:outline-none focus:border-gold-400">
+                </div>
+            </div>
+            <div class="flex justify-end gap-2 pt-2">
+                <button onclick="toggleConfigModal()" class="px-4 py-2 rounded-lg text-xs font-semibold bg-navy-800 text-slate-300 hover:bg-navy-700">Đóng</button>
+                <button onclick="saveSocialLinks()" class="px-4 py-2 rounded-lg text-xs font-bold bg-gradient-to-r from-gold-400 to-gold-600 text-navy-950">Áp Dụng Ngay</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden border-b border-gold-500/20">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.14),transparent_55%),radial-gradient(circle_at_bottom_left,rgba(29,53,87,0.45),transparent_60%)]"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <!-- Cột Nội dung Hero -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-xs font-semibold tracking-widest uppercase">
+                    <span>⚓ Tháng 02/1990 – Nay • 35 Năm Phụng Sự & Kiến Tạo</span>
+                </div>
+
+                <h1 class="font-serif text-3xl sm:text-5xl lg:text-[52px] font-bold leading-[1.15] text-white">
+                    Từ Người Lính Hải Quân <span class="gold-gradient-text">Bán Đảo Cam Ranh</span> Đến Sứ Mệnh Vàng Trắng <span class="gold-gradient-text">HUVATRA</span>
+                </h1>
+
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
+                    Hành trình 35 năm rèn luyện từ một người chiến sĩ Hải quân Nhân dân Việt Nam trưởng thành lên người Sĩ quan Quân đội Nhân dân Việt Nam nơi tiền tiêu Tổ quốc, và khát vọng mang phẩm chất <strong class="text-gold-300 font-semibold">“Sống Kỷ Luật – Sống Trách Nhiệm”</strong> đưa Yến sào Khánh Hòa vươn tầm thế giới.
+                </p>
+
+                <blockquote class="p-4 sm:p-5 rounded-xl glass-card border-l-4 border-l-gold-500 italic text-gold-300/95 font-serif text-base sm:text-lg">
+                    “Từ khi là người chiến sĩ đến khi trở thành người sĩ quan, tôi luôn khắc cốt ghi tâm rằng biển đảo quê hương nằm trong trái tim mình — tấc đất tấc vàng, biển cả là nơi tôi trọn đời giữ gìn hải đảo tiền tiêu của Tổ quốc.”
+                </blockquote>
+
+                <div class="pt-2 flex flex-wrap gap-6 text-sm">
+                    <div>
+                        <p class="text-gold-400 font-serif font-bold text-2xl">02/1990</p>
+                        <p class="text-slate-400 text-xs uppercase tracking-wider">Nhập Ngũ Hải Quân</p>
+                    </div>
+                    <div class="w-px h-10 bg-gold-500/20"></div>
+                    <div>
+                        <p class="text-gold-400 font-serif font-bold text-2xl">35 Năm</p>
+                        <p class="text-slate-400 text-xs uppercase tracking-wider">Chiến Sĩ Lên Sĩ Quan</p>
+                    </div>
+                    <div class="w-px h-10 bg-gold-500/20"></div>
+                    <div>
+                        <p class="text-gold-400 font-serif font-bold text-2xl">HUVATRA</p>
+                        <p class="text-slate-400 text-xs uppercase tracking-wider">Vàng Trắng Khánh Hòa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột Chân dung đại diện -->
+            <div class="lg:col-span-5 flex flex-col items-center">
+                <div class="relative group w-full max-w-md rounded-2xl p-2 bg-gradient-to-b from-gold-400/40 via-gold-500/10 to-gold-600/40 gold-border-glow">
+                    <div class="relative rounded-xl overflow-hidden bg-navy-900 aspect-[4/5] flex items-center justify-center">
+                        <img id="hero-portrait" 
+                             src="avatar.jpg" 
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80';" 
+                             alt="Chân dung Nguyễn Duy Hùng - Sáng lập Yến sào HUVATRA" 
+                             class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-4 left-4 right-4 text-left">
+                            <span class="px-2.5 py-1 rounded bg-gold-500 text-navy-950 font-bold text-[11px] uppercase tracking-wider">Nhà Sáng Lập & CEO</span>
+                            <h2 class="font-serif text-2xl font-bold text-white mt-1.5">Nguyễn Duy Hùng</h2>
+                            <p class="text-xs text-gold-300">Sĩ Quan QĐND Việt Nam • Thương Hiệu Yến Sào HUVATRA</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-400 mt-3 text-center no-export">
+                    💡 Mẹo: Bấm <strong>"📷 Đổi Ảnh Chân Dung"</strong> và <strong>"🔗 Gắn Link Zalo/FB"</strong> trước khi xuất file `index.html`.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- CÂU CHUYỆN TRUYỀN CẢM HỨNG 5 CHƯƠNG -->
+    <main id="hanh-trinh" class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 space-y-16">
+        
+        <div class="text-center space-y-3">
+            <p class="text-gold-400 text-xs font-bold uppercase tracking-[0.25em]">Hồi Ký Di Sản & Khát Vọng</p>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Bản Hùng Ca Nơi Đầu Sóng & Đôi Cánh Vàng Trắng</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto"></div>
+        </div>
+
+        <!-- Chương 1 -->
+        <article class="glass-card rounded-2xl p-6 sm:p-10 space-y-5 relative overflow-hidden">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Chương I • Tháng 02 Năm 1990</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">Lời Thề Tuổi Đôi Mươi & Hành Trình Vào Bán Đảo Cam Ranh</h3>
+            <p class="text-slate-200 leading-relaxed text-base sm:text-lg dropcap">
+                Tháng 2 năm 1990, giữa tiết trời mùa xuân của đất nước những năm đầu đổi mới, chàng thanh niên trẻ Nguyễn Duy Hùng khoác lên mình bộ quân phục còn thơm mùi vải mới, chính thức nhập ngũ vào lực lượng Hải quân Nhân dân Việt Nam. Trải qua những tháng ngày huấn luyện thao trường khắc nghiệt và học tập bền bỉ, người chiến sĩ trẻ ấy đã vượt qua mọi thử thách để đặt chân vào nhận nhiệm vụ tại Bán đảo Cam Ranh — vùng biển quân cảng chiến lược bậc nhất của Tổ quốc.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                Trước mênh mông sóng nước Khánh Hòa, nơi gió biển mặn mòi thổi rát mặt và nắng gió thử thách ý chí con người, lý tưởng bảo vệ chủ quyền biển đảo thiêng liêng đã thấm sâu vào từng nhịp thở. Với người lính Hải quân năm ấy, Cam Ranh không chỉ là nơi đóng quân, mà đã trở thành máu thịt, thành quê hương thứ hai.
+            </p>
+        </article>
+
+        <!-- Chương 2 -->
+        <article class="glass-card rounded-2xl p-6 sm:p-10 space-y-5 relative overflow-hidden">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Chương II • 35 Năm Phụng Sự Trong Quân Ngũ</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">Từ Người Chiến Sĩ Đến Người Sĩ Quan: “Tấc Đất Tấc Vàng”</h3>
+            <p class="text-slate-200 leading-relaxed text-base sm:text-lg">
+                Suốt 35 năm ròng rã công tác trong Quân đội Nhân dân Việt Nam, đi lên từ một người chiến sĩ binh nhì rồi phấn đấu học tập, rèn luyện trở thành người Sĩ quan Quân đội Nhân dân Việt Nam, có một nguyên tắc chưa bao giờ thay đổi trong con người Nguyễn Duy Hùng: <strong>dù ở bất kỳ cương vị nào cũng luôn hoàn thành xuất sắc mọi nhiệm vụ được giao</strong>.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                Từ lúc còn chắc tay súng nơi vọng gác cho đến khi mang trên vai quân hàm Sĩ quan chỉ huy, ông luôn hiểu sâu sắc rằng: <em>“Biển đảo quê hương luôn ở trong trái tim tôi. Tấc đất là tấc vàng, và biển cả bao la chính là nơi tôi luôn giữ gìn hải đảo tiền tiêu của Tổ quốc.”</em> Kỷ luật thép của quân đội và lòng trung thành tuyệt đối với Tổ quốc đã hun đúc nên một bản lĩnh kiên cường, chính trực và chuẩn mực trong từng hành động.
+            </p>
+        </article>
+
+        <!-- Chương 3 -->
+        <article class="glass-card rounded-2xl p-6 sm:p-10 space-y-5 relative overflow-hidden">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Chương III • Cơ Duyên Nơi Đảo Xa</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">Thấu Hiểu Loài Chim Yến Giữa Trùng Khơi Khánh Hòa</h3>
+            <p class="text-slate-200 leading-relaxed text-base sm:text-lg">
+                Chính những năm tháng gắn bó mật thiết với biển đảo tiền tiêu và vùng vịnh Cam Ranh – Khánh Hòa đã mang đến cho ông một cơ duyên đặc biệt. Giữa vách đá chênh vênh ngoài đảo xa, ông đã quan sát, lắng nghe và thấu hiểu tường tận tập tính sinh học kỳ diệu của loài chim yến — loài chim chỉ chọn những nơi có bầu không khí tinh khiết nhất, vi khí hậu chuẩn mực nhất và vùng biển giàu vi khoáng nhất để kết tổ.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                Ông nhận ra sự tương đồng kỳ lạ giữa loài chim yến Khánh Hòa và người lính Hải quân: cả hai đều bền bỉ vượt qua giông bão đại dương, thủy chung với nơi mình thuộc về và âm thầm chắt chiu tinh hoa của trời biển để dâng tặng cho đời những giá trị quý giá nhất.
+            </p>
+        </article>
+
+        <!-- Chương 4 -->
+        <article class="glass-card rounded-2xl p-6 sm:p-10 space-y-5 relative overflow-hidden">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Chương IV • Trở Về Đời Thường Với Phẩm Chất Bộ Đội Cụ Hồ</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">“Sống Kỷ Luật – Sống Trách Nhiệm” & Khởi Sinh Yến Sào HUVATRA</h3>
+            <p class="text-slate-200 leading-relaxed text-base sm:text-lg">
+                Sau 35 năm hoàn thành trọn vẹn và vẻ vang nhiệm vụ của người lính, người sĩ quan đối với Tổ quốc, ông trở về với đời thường không phải để nghỉ ngơi, mà để mở ra một mặt trận mới — mặt trận kinh tế và phụng sự sức khỏe cộng đồng. Ông mang nguyên vẹn tâm niệm <strong>“Sống Kỷ Luật và Sống Trách Nhiệm”</strong> của người lính vào kỹ thuật thiết kế nhà yến, kiểm soát vi khí hậu (nhiệt độ, độ ẩm, ánh sáng, âm thanh) và quy trình thu hoạch, chế biến tổ yến.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                Thương hiệu <strong>Yến sào HUVATRA (Hùng Vàng Trắng)</strong> ra đời từ chính sự nghiêm cẩn ấy: mỗi tổ yến đều được nâng niu bằng danh dự của một người cựu Sĩ quan Quân đội — tuyệt đối nguyên chất, chuẩn mực và minh bạch.
+            </p>
+        </article>
+
+        <!-- Chương 5 -->
+        <article id="su-menh" class="glass-card rounded-2xl p-6 sm:p-10 space-y-5 border-2 border-gold-500/40 gold-border-glow">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-400">Chương V • Tầm Nhìn Vươn Xa</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold gold-gradient-text">Đưa “Vàng Trắng Khánh Hòa” Vươn Ra Thế Giới</h3>
+            <p class="text-slate-200 leading-relaxed text-base sm:text-lg">
+                Nếu 35 năm tuổi trẻ ông đã canh giữ bình yên cho biển đảo Khánh Hòa, thì hôm nay, trên cương vị người sáng lập <strong>HUVATRA</strong>, ông nhận lãnh sứ mệnh mới: trở thành người mang <strong>“Vàng Trắng của Khánh Hòa”</strong> vươn xa ra năm châu bốn biển.
+            </p>
+            <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                Đó không chỉ là câu chuyện thương mại, mà là niềm tự hào dân tộc — khẳng định vị thế đỉnh cao của Yến sào Khánh Hòa trên bản đồ thế giới bằng trí tuệ công nghệ hiện đại kết hợp cùng trái tim kỷ luật, trách nhiệm của người lính Hải quân Nhân dân Việt Nam.
+            </p>
+        </article>
+
+    </main>
+
+    <!-- CHUYÊN MỤC MỚI: TRƯNG BÀY TINH HOA SẢN PHẨM & GIẢI PHÁP KỸ THUẬT HUVATRA -->
+    <section id="san-pham" class="py-20 bg-navy-900/40 border-t border-gold-500/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <p class="text-gold-400 text-xs font-bold uppercase tracking-[0.25em]">Kết Tinh Từ Kỷ Luật Người Lính & Tinh Hoa Biển Đảo</p>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Hệ Sinh Thái Vàng Trắng <span class="gold-gradient-text">HUVATRA</span></h2>
+                <p class="text-slate-300 text-sm sm:text-base font-light">
+                    Mỗi sản phẩm và công trình nhà yến của HUVATRA tại Cam Ranh – Khánh Hòa đều được kiểm soát nghiêm ngặt theo tiêu chuẩn kỷ luật quân đội, bảo toàn trọn vẹn dưỡng chất tự nhiên quý giá nhất.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Dòng sản phẩm 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-gold-400/60 transition duration-300">
+                    <div>
+                        <div class="relative aspect-[16/10] bg-navy-950 overflow-hidden">
+                            <img id="prod-img-1"
+                                 src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80"
+                                 alt="Tổ Yến Tinh Chế & Yến Thô Thượng Hạng HUVATRA"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gold-500 text-navy-950 font-bold text-[11px] uppercase tracking-wider">
+                                Thượng Hạng • 100% Nguyên Chất
+                            </div>
+                            <label class="no-export absolute bottom-2 right-2 cursor-pointer px-2.5 py-1 rounded bg-navy-950/85 text-gold-300 text-[11px] border border-gold-500/40 hover:bg-navy-800">
+                                📷 Đổi ảnh SP 1
+                                <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'prod-img-1')">
+                            </label>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-300 transition">
+                                Tổ Yến Tinh Chế & Yến Thô Tuyển Chọn Cam Ranh
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Thu hoạch trực tiếp từ hệ thống nhà yến HUVATRA tại vùng biển Cam Ranh – Khánh Hòa. Sợi yến già, dày, thơm nồng vị biển, làm sạch thủ công tỉ mỉ theo quy chuẩn vệ sinh khắt khe, không chất tẩy trắng, không phụ gia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://zalo.me/" target="_blank" rel="noopener noreferrer" class="dynamic-zalo-btn w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-gold-400 to-gold-600 text-navy-950 hover:brightness-110 transition">
+                            <span>Tư Vấn & Đặt Hàng Qua Zalo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dòng sản phẩm 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-gold-400/60 transition duration-300">
+                    <div>
+                        <div class="relative aspect-[16/10] bg-navy-950 overflow-hidden">
+                            <img id="prod-img-2"
+                                 src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+                                 alt="Yến Chưng Tươi & Quà Tặng Sức Khỏe HUVATRA"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gold-500 text-navy-950 font-bold text-[11px] uppercase tracking-wider">
+                                Dinh Dưỡng Thuận Tự Nhiên
+                            </div>
+                            <label class="no-export absolute bottom-2 right-2 cursor-pointer px-2.5 py-1 rounded bg-navy-950/85 text-gold-300 text-[11px] border border-gold-500/40 hover:bg-navy-800">
+                                📷 Đổi ảnh SP 2
+                                <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'prod-img-2')">
+                            </label>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-300 transition">
+                                Bộ Quà Tặng Hoàng Gia & Yến Chưng Dưỡng Sinh
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Kết hợp tinh hoa tổ yến Khánh Hòa cùng nguyên liệu tự nhiên thuần khiết, tôn vinh triết lý dưỡng sinh bền vững. Thiết kế hộp quà sang trọng, xứng tầm biếu tặng đối tác, lãnh đạo và phụng dưỡng đấng sinh thành.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://zalo.me/" target="_blank" rel="noopener noreferrer" class="dynamic-zalo-btn w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-gold-400 to-gold-600 text-navy-950 hover:brightness-110 transition">
+                            <span>Nhận Catalogue Quà Tặng</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Giải pháp kỹ thuật 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group hover:border-gold-400/60 transition duration-300">
+                    <div>
+                        <div class="relative aspect-[16/10] bg-navy-950 overflow-hidden">
+                            <img id="prod-img-3"
+                                 src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+                                 alt="Kỹ Thuật Thiết Kế & Vi Khí Hậu Nhà Yến HUVATRA"
+                                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-gold-500 text-navy-950 font-bold text-[11px] uppercase tracking-wider">
+                                Chuyên Gia Kỹ Thuật Nhà Yến
+                            </div>
+                            <label class="no-export absolute bottom-2 right-2 cursor-pointer px-2.5 py-1 rounded bg-navy-950/85 text-gold-300 text-[11px] border border-gold-500/40 hover:bg-navy-800">
+                                📷 Đổi ảnh SP 3
+                                <input type="file" accept="image/*" class="hidden" onchange="handleImageUpload(event, 'prod-img-3')">
+                            </label>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-serif text-xl font-bold text-white group-hover:text-gold-300 transition">
+                                Tư Vấn Thiết Kế & Kiểm Soát Vi Khí Hậu Nhà Yến
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Ứng dụng sự am hiểu sâu sắc về loài chim yến vùng biển đảo Khánh Hòa để thiết kế, thi công và chuẩn hóa thông số âm thanh, độ ẩm, nhiệt độ, đối lưu khí — giúp nhà yến dẫn dụ đàn bền vững và đạt sản lượng cao.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="https://zalo.me/" target="_blank" rel="noopener noreferrer" class="dynamic-zalo-btn w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-gold-400 to-gold-600 text-navy-950 hover:brightness-110 transition">
+                            <span>Kết Nối Chuyên Gia Kỹ Thuật</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIMELINE DẤU ẤN -->
+    <section id="cot-moc" class="py-16 bg-navy-900/60 border-y border-gold-500/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-center text-white mb-12">Biên Niên Sử Hành Trình 35 Năm & HUVATRA</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-xl glass-card">
+                    <p class="text-gold-400 font-serif font-bold text-xl">Tháng 02/1990</p>
+                    <h4 class="font-bold text-white mt-1 mb-2">Nhập Ngũ Hải Quân</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Lên đường nhập ngũ, rèn luyện và vào Bán đảo Cam Ranh thực hiện nhiệm vụ bảo vệ chủ quyền biển đảo thiêng liêng.</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card">
+                    <p class="text-gold-400 font-serif font-bold text-xl">1990 – 2025</p>
+                    <h4 class="font-bold text-white mt-1 mb-2">35 Năm Chiến Sĩ Lên Sĩ Quan</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Trưởng thành từ người lính đến Sĩ quan QĐND Việt Nam, giữ trọn lời thề “Tấc đất tấc vàng” nơi hải đảo tiền tiêu.</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card">
+                    <p class="text-gold-400 font-serif font-bold text-xl">Khởi Nghiệp</p>
+                    <h4 class="font-bold text-white mt-1 mb-2">Sáng Lập HUVATRA</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Đưa triết lý “Sống Kỷ Luật – Sống Trách Nhiệm” và sự am hiểu chim yến ngoài đảo vào xây dựng thương hiệu Yến sào HUVATRA.</p>
+                </div>
+                <div class="p-6 rounded-xl glass-card">
+                    <p class="text-gold-400 font-serif font-bold text-xl">Tầm Nhìn Quốc Tế</p>
+                    <h4 class="font-bold text-white mt-1 mb-2">Vàng Trắng Vươn Xa</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Đưa thương hiệu Yến sào Khánh Hòa – HUVATRA (Hùng Vàng Trắng) vươn tầm thế giới.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center border-t border-gold-500/20 bg-navy-950">
+        <div class="max-w-4xl mx-auto px-4 space-y-3">
+            <p class="font-serif text-xl font-bold gold-gradient-text">YẾN SÀO HUVATRA — HÙNG VÀNG TRẮNG KHÁNH HÒA</p>
+            <p class="text-sm text-slate-400">“Sống Kỷ Luật • Sống Trách Nhiệm • Đưa Vàng Trắng Khánh Hòa Vươn Ra Thế Giới”</p>
+            <p class="text-xs text-slate-500 pt-4">© Bản quyền Di sản Cá nhân Nguyễn Duy Hùng • Cam Ranh, Khánh Hòa, Việt Nam.</p>
+        </div>
+    </footer>
+
+    <!-- CỤM NÚT BẤM NỔI KẾT NỐI ZALO & FACEBOOK FANPAGE HUVATRA -->
+    <div class="fixed bottom-6 right-5 sm:right-7 z-40 flex flex-col items-end gap-4">
+        
+        <!-- Nút Facebook Fanpage HUVATRA -->
+        <a id="floating-fb-link"
+           href="https://www.facebook.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook Fanpage Yến sào HUVATRA"
+           class="group flex items-center gap-3">
+            <span class="hidden sm:inline-block px-3.5 py-1.5 rounded-full text-xs font-semibold bg-navy-900/95 text-gold-300 border border-gold-500/40 shadow-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition duration-300 pointer-events-none">
+                Fanpage Yến Sào HUVATRA
+            </span>
+            <div class="relative w-14 h-14 rounded-full bg-gradient-to-br from-[#1877F2] to-[#0C5DC7] border-2 border-gold-400 flex items-center justify-center shadow-xl hover:scale-110 transition duration-300 fab-pulse">
+                <svg class="w-7 h-7 text-white fill-current" viewBox="0 0 24 24">
+                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+            </div>
+        </a>
+
+        <!-- Nút Chat Zalo HUVATRA -->
+        <a id="floating-zalo-link"
+           href="https://zalo.me/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Kết nối Zalo Yến sào HUVATRA"
+           class="group flex items-center gap-3">
+            <span class="hidden sm:inline-block px-3.5 py-1.5 rounded-full text-xs font-semibold bg-navy-900/95 text-gold-300 border border-gold-500/40 shadow-lg opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition duration-300 pointer-events-none">
+                Chat Zalo Ông Chủ HUVATRA
+            </span>
+            <div class="relative w-14 h-14 rounded-full bg-gradient-to-br from-[#0068FF] to-[#004BB5] border-2 border-gold-400 flex items-center justify-center shadow-xl hover:scale-110 transition duration-300 fab-pulse">
+                <div class="flex flex-col items-center justify-center leading-none">
+                    <span class="font-sans font-extrabold text-white text-[13px] tracking-tight">Zalo</span>
+                    <span class="text-[8px] text-gold-300 font-bold uppercase tracking-widest mt-0.5">HUVATRA</span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- SCRIPT QUẢN TRỊ ẢNH, ĐỒNG BỘ LINK ZALO/FB & XUẤT FILE SẠCH CHO GITHUB -->
+    <script>
+        function handleImageUpload(event, targetId) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const imgElement = document.getElementById(targetId);
+                if (imgElement) {
+                    imgElement.src = e.target.result;
+                }
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function toggleConfigModal() {
+            const modal = document.getElementById('config-modal');
+            modal.classList.toggle('hidden');
+            modal.classList.toggle('flex');
+        }
+
+        function saveSocialLinks() {
+            const zaloInput = document.getElementById('input-zalo').value.trim();
+            const fbInput = document.getElementById('input-fb').value.trim();
+
+            if (zaloInput) {
+                const zaloUrl = zaloInput.startsWith('http')
+                    ? zaloInput
+                    : 'https://zalo.me/' + zaloInput.replace(/[^0-9]/g, '');
+                document.getElementById('floating-zalo-link').setAttribute('href', zaloUrl);
+                // Đồng bộ tự động cho cả 3 nút Đặt hàng trong khu trưng bày sản phẩm
+                document.querySelectorAll('.dynamic-zalo-btn').forEach(btn => {
+                    btn.setAttribute('href', zaloUrl);
+                });
+            }
+
+            if (fbInput) {
+                const fbUrl = fbInput.startsWith('http') ? fbInput : 'https://' + fbInput;
+                document.getElementById('floating-fb-link').setAttribute('href', fbUrl);
+            }
+
+            toggleConfigModal();
+        }
+
+        function exportCleanHTML() {
+            const clone = document.documentElement.cloneNode(true);
+            clone.querySelectorAll('.no-export').forEach(el => el.remove());
+
+            const htmlContent = "<!DOCTYPE html>\n" + clone.outerHTML;
+            const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "index.html";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
